@@ -7,3 +7,7 @@
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(75, 75)
 texture = ExtResource("1_eqr2k")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(219, 75)
+texture = ExtResource("1_eqr2k")
