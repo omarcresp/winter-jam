@@ -209,6 +209,21 @@ radius = 8.68967
 radius = 5.0
 height = 14.0
 
+[sub_resource type="Animation" id="Animation_xwd0q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
 [sub_resource type="Animation" id="Animation_rjfg4"]
 resource_name = "new_animation"
 length = 3.0
@@ -224,21 +239,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-}
-
-[sub_resource type="Animation" id="Animation_xwd0q"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4w6j6"]
@@ -260,7 +260,7 @@ position = Vector2(7, 0)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Node mapa"]
 texture_filter = 1
-position = Vector2(227, -12)
+position = Vector2(-87, -174)
 tile_set = SubResource("TileSet_encof")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="Node mapa"]
@@ -289,6 +289,7 @@ scale = Vector2(0.7, 0.7)
 shape = SubResource("CircleShape2D_4hg0l")
 
 [node name="Node Objeto Girando" type="Node2D" parent="."]
+texture_filter = 1
 position = Vector2(-3, -176)
 
 [node name="Area2D" type="Area2D" parent="Node Objeto Girando"]
